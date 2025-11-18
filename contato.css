@@ -1,0 +1,93 @@
+body {
+   font-family: 'Times New Roman', Times, serif;
+   margin: 0;
+   padding: 0;
+   background-color: #fffaf5;
+   color: #333;
+}
+
+header {
+    background-color: coral;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+}
+
+nav a.ativo {
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.contato-container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba (0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+.contato-container h2 {
+    text-align: center;
+    color: #ff6f91;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+}
+
+input, textarea {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+button {
+    background-color: coral;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff4d6d;
+}
+
+#feedback {
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #333;
+}
+
+footer {
+  text-align: center;
+  background-color: coral;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

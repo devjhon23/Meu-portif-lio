@@ -1,0 +1,88 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+}
+
+header {
+  background-color: #ff7f50;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  align-items: center;
+  padding: 16px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffe7c7;
+}
+
+.borda {
+  border: 2px solid #202020;
+  padding: 10px 15px;
+  display: inline-block;
+  border-radius: 50px;  /* bem redondinha */
+}
+.hero {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #ff7f50;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+img {
+  position: absolute;
+  top: 125px;
+  left: 0;
+  width: 100%;
+  z-index: -1;
+}
+
+button {
+  background-color: #ff7f50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff4d6d;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

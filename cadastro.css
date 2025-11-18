@@ -1,0 +1,87 @@
+header {
+  background-color: #ff7f50;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.hero {
+  text-align: center;
+  margin: 60px auto;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #ff7f50;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+a {
+    text-decoration: none;
+    color:#fff
+}
+
+.form-section {
+  max-width: 400px;
+  margin: 60px auto;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  color: #ff7f50;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border-color: #ff758f;
+}
+
+#mensagem {
+  text-align: center;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  text-align: center;
+  background-color: #ff7f50;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+}

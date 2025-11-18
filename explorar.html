@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorar Pets 🐾 - Tinder de Pets</title>
+    <link rel="stylesheet" href="explorar.css">
+</head>
+<body>
+    <header role="banner"> 
+        <h1>Tinder de Pets 🐶🐱</h1>
+        <nav aria-label="Navegação Principal"> 
+            <ul>
+                <li><a href="main page.html">Início</a></li>
+                <li><a href="matches.html">Meus Matches</a></li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="explorar-section" aria-labelledby="section-title">
+            <h2 id="section-title">Encontre novos amigos para o seu pet 💕</h2>
+            
+            <div id="lista-pet" class="container-de-cards">
+          <article id="card-pet" class="pet-card" aria-live="polite"> 
+    <div class="pet-media">
+        <img id="fotoPet" src="" alt="Foto do Pet em exibição para Match"> 
+    </div>
+    </article>  
+                <div class="pet-details">
+                    <h3 id="nomePet">Nome do Pet</h3>
+                    <p id="infoPet">Espécie, idade, etc.</p>
+                </div>
+
+                <div class="botoes">
+                    <button id="dislike" aria-label="Descartar Pet">❌ Não</button> 
+                    <button id="like" aria-label="Dar Match com Pet">💖 Sim</button> 
+                </div>
+            </article>
+            
+            <p id="mensagem" role="status"></p> 
+        </section>
+    </main>
+
+    <footer role="contentinfo">
+        <p>&copy; 2025 Tinder Pet. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="explorar.js"></script>
+</body>
+</html>

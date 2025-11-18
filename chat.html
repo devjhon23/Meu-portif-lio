@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="matches.css"> </head>
+<body>
+    <header>
+        <h1>Tinder de Pets 🐶🐱</h1>
+        <nav>
+            <a href="matches.html">Matches</a>
+            <a href="main page.html">Inicío</a>
+        </nav>
+    </header>
+
+    <main class="chat-main">
+        <h2 id="titulo-chat">Chat com [Nome do Pet]</h2>
+        
+        <div id="mensagens" style="height: 300px; border: 1px solid #ccc; overflow-y: scroll;">
+            </div>
+        
+        <form id="form-chat">
+            <input type="text" id="input-msg" placeholder="Digite sua mensagem..." required>
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </main>
+
+    <footer>
+        <p>© 2025 Tinder Pets</p>
+    </footer>
+
+    <script src="/socket.io/socket.io.js"></script>
+    
+    <script src="chat.js"></script> 
+</body>
+</html>
