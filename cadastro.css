@@ -1,87 +1,159 @@
+/* ============================== */
+/*   CABEÇALHO PADRÃO DO SITE     */
+/* ============================== */
+
+
 header {
-  background-color: #ff7f50;
-  color: white;
-  text-align: center;
-  padding: 15px 0;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(to right, #ff7a00, #ff9a3d);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
 }
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
 }
 
-.hero {
-  text-align: center;
-  margin: 60px auto;
+header h1 {
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
 }
 
-.hero h2 {
-  font-size: 2rem;
-  color: #ff7f50;
+header nav {
+    margin-top: 5px;
 }
 
-.hero p {
-  font-size: 1.2rem;
-  margin-bottom: 20px;
-}
-
-a {
+header nav a {
+    margin: 0 15px;
+    color: #fff3e0;
+    font-size: 18px;
     text-decoration: none;
-    color:#fff
+    font-weight: 500;
+    transition: 0.2s;
 }
 
-.form-section {
-  max-width: 400px;
-  margin: 60px auto;
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+header nav a:hover {
+    color: white;
+    text-shadow: 0px 0px 5px rgba(255,255,255,0.6);
 }
 
-.form-section h2 {
-  text-align: center;
-  color: #ff7f50;
-  margin-bottom: 20px;
+/* ============================== */
+/*        CONTAINER CENTRAL       */
+/* ============================== */
+
+main {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+/* BOX DO FORMULÁRIO */
+
+.form-container {
+    width: 100%;
+    max-width: 420px;   /* deixa o card elegante */
+    background: #ffffff;
+    padding: 25px;
+    margin: 40px auto;  /* ISSO CENTRALIZA */
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+}
+.form-container h2 {
+    text-align: left;
+    color: #e06500;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+/* Inputs */
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 label {
-  font-weight: bold;
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #444;
+}
+
+.form-box input,
+.form-box select {
+    padding: 12px;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+    font-size: 16px;
+    transition: 0.2s;
 }
 
 input, select {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+/* Botão */
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #ff8a00;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #e67600;
 }
 
-input:focus, select:focus {
-  outline: none;
-  border-color: #ff758f;
-}
-
-#mensagem {
-  text-align: center;
-  margin-top: 15px;
-  font-weight: bold;
-}
+/* Rodapé */
 
 footer {
-  text-align: center;
-  background-color: #ff7f50;
-  color: white;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+    margin-top: 40px;
+    text-align: center;
+    padding: 10px;
+    color: #999;
+    font-size: 14px;
+}
+
+/* ============================== */
+/*    RESPONSIVIDADE CELULAR      */
+/* ============================== */
+
+@media (max-width: 480px) {
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    header nav a {
+        font-size: 14px;
+    }
+
+    .cadastro-container {
+        padding: 20px;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
 }

@@ -1,146 +1,97 @@
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
+    font-family: 'Times New Roman', serif;
     background-color: #fffaf5;
-    color: #333;
-    /* CORREÇÃO: Adiciona padding inferior para não cobrir conteúdo com o footer fixo */
-    padding-bottom: 60px; 
+    margin: 0;
+    padding-bottom: 70px;
+    text-align: center;
 }
 
+/* HEADER */
 header {
     background-color: #ff7f50;
     color: white;
-    text-align: center;
     padding: 20px;
-}
-
-nav a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav a.ativo {
-    text-decoration: underline; /* Corrigido para ser mais claro quando ativo */
-}
-
-main {
-    /* CORREÇÃO: Usa Flexbox para ajudar na centralização do conteúdo da seção */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: calc(100vh - 120px); /* Garante que o main ocupe espaço acima do footer/header */
-    padding: 20px;
-    text-align: center;
 }
 
 nav ul {
     list-style: none;
-    padding: 0;
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 25px;
 }
 
-.explorar-section {
-    /* CORREÇÃO: Garante que a seção principal centralize o card */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin: 60px auto;
+nav a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
 }
 
+/* CARD */
 .pet-card {
-    background-color: #fff;
-    max-width: 320px;
-    /* Corrigido para centralizar via margin */
-    margin: 30px auto; 
-    padding: 20px;
+    background: #ffffff;
+    width: 330px;
+    margin: 25px auto;
+    padding: 18px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: 0.3s;
-}
-
-.pet-card:hover {
-    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .pet-card img {
     width: 100%;
-    height: 250px;
+    height: 260px;
+    border-radius: 12px;
     object-fit: cover;
-    border-radius: 10px;
 }
 
+/* BOTÕES */
 .botoes {
+    margin-top: 20px;
     display: flex;
-    justify-content: space-around;
-    margin-top: 15px;
+    justify-content: center;
+    gap: 20px;
 }
 
 .botoes button {
-    font-size: 1.8rem;
-    background: none;
+    font-size: 1.3rem;
+    padding: 10px 26px;
+    border-radius: 12px;
     border: none;
     cursor: pointer;
-    transition: transform 0.2s;
-}
-
-.botoes button:hover {
-    transform: scale(1.3);
-}
-
-#mensagem {
-    margin-top: 20px;
     font-weight: bold;
-    color: coral;
+    transition: 0.3s;
 }
 
-footer {
-    text-align: center;
-    background-color: coral;
+.btn-proximo {
+    background-color: #ffa07a;
     color: white;
-    padding: 10px 0;
+}
+
+.btn-proximo:hover {
+    background-color: #ff7f50;
+}
+
+.btn-match {
+    background-color: #ff4d88;
+    color: white;
+}
+
+.btn-match:hover {
+    background-color: #e6326d;
+}
+
+/* MENSAGEM */
+#mensagem {
+    color: coral;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer {
     position: fixed;
-    width: 100%;
     bottom: 0;
-    /* Definir z-index é opcional, mas garante que fique acima de outros elementos */
-    z-index: 100;
-}
-/* Adicione uma transição suave para as transformações no card */
-.pet-card {
-    /* ... seus estilos anteriores ... */
-    transition: transform 0.3s ease-out, opacity 0.3s ease-out; /* Adicionado transform e opacity */
-    /* Garante que o card não 'vibre' ao trocar */
-    will-change: transform, opacity; 
-}
-
-/* 1. Classe para o efeito de deslizar para a direita (LIKE) */
-.pet-card.swipe-right {
-    transform: translateX(100vw) rotate(15deg); /* Move para fora da tela e rotaciona */
-    opacity: 0;
-}
-
-/* 2. Classe para o efeito de deslizar para a esquerda (DISLIKE) */
-.pet-card.swipe-left {
-    transform: translateX(-100vw) rotate(-15deg); /* Move para fora da tela na outra direção */
-    opacity: 0;
-}
-
-/* 3. Classe usada pelo JS para esconder o card após a animação */
-.pet-card.hidden {
-    display: none;
-}
-
-/* Centraliza o card no meio da tela */
-.explorar-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; /* Centraliza verticalmente o card */
-    min-height: 80vh; /* Garante que ocupa a maior parte da viewport */
-    margin: 0 auto;
+    width: 100%;
+    background: coral;
+    color: white;
+    padding: 8px;
 }

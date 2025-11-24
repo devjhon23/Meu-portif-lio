@@ -53,3 +53,30 @@ function exibirMatches() {
 }
 
 document.addEventListener("DOMContentLoaded", exibirMatches);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const container = document.getElementById("lista-matches");
+    const msg = document.getElementById("mensagem");
+
+    const matches = JSON.parse(localStorage.getItem("matches")) || [];
+
+    if (matches.length === 0) {
+        msg.textContent = "Nenhum match ainda 😿";
+        return;
+    }
+
+    msg.textContent = "";
+
+    matches.forEach(pet => {
+        const card = document.createElement("div");
+        card.classList.add("match-card");
+
+        card.innerHTML = `
+            <img src="${pet.foto}" alt="Pet" class="foto-pet">
+            <h3>${pet.nome}</h3>
+            <p>${pet.especie} • ${pet.idade} anos</p>
+        `;
+
+        container.appendChild(card);
+    });
+});
