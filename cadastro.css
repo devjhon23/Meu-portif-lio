@@ -4,7 +4,7 @@
 
 
 header {
-    background: linear-gradient(to right, #ff7a00, #ff9a3d);
+    background: linear-gradient(to right, #ff7f50,#ff7f50 );
     padding: 20px 0;
     text-align: center;
     color: white;
@@ -13,7 +13,7 @@ header {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family:  "Poppins", Arial, Helvetica, sans-serif;
     background-color: #fff;
 }
 
@@ -65,7 +65,7 @@ main {
 }
 .form-container h2 {
     text-align: left;
-    color: #e06500;
+    color: #ff7f50;
     font-weight: bold;
     margin-bottom: 20px;
     display: flex;
@@ -109,7 +109,7 @@ input, select {
 button {
     width: 100%;
     padding: 12px;
-    background-color: #ff8a00;
+    background-color: coral;
     color: white;
     font-size: 17px;
     font-weight: bold;
@@ -118,7 +118,7 @@ button {
     cursor: pointer;
 }
 button:hover {
-    background-color: #e67600;
+    background-color: coral;
 }
 
 /* Rodapé */
