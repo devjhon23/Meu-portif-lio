@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chat - Tinder de Pets</title>
+  <link rel="stylesheet" href="/chat.css">
+</head>
+<body>
+  <main class="chat-container">
+    <h2>Chat do Tinder de Pets</h2>
+
+    <ul id="messages"></ul>
+
+    <form id="chat-form">
+      <input id="msg" autocomplete="off" placeholder="Escreva sua mensagem..." />
+      <button>Enviar</button>
+    </form>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/chat.js"></script>
+</body>
+</html>

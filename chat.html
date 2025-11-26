@@ -4,35 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chat</title>
-    <link rel="stylesheet" href="matches.css"> </head>
+    <link rel="stylesheet" href="chat.css">
 <body>
-    <header>
-        <h1>Tinder de Pets </h1>
-        <nav>
-            <a href="matches.html">Matches</a>
-            <a href="main page.html">Inicío</a>
-        </nav>
-    </header>
+  <div class="chat-container">
+    <h2>Chat com o Suporte </h2>
 
-    <main class="chat-main">
-        <h2 id="titulo-chat">Chat com [Nome do Pet]</h2>
-        
-        <div id="mensagens" style="height: 300px; border: 1px solid #ccc; overflow-y: scroll;">
-            </div>
-        
-        <form id="form-chat">
-            <input type="text" id="input-msg" placeholder="Digite sua mensagem..." required>
-            <button type="submit">Enviar</button>
-        </form>
-        
-    </main>
+    <div id="chatBox" class="chat-box"></div>
 
-    <footer>
-        <p>© 2025 Tinder Pets</p>
-    </footer>
 
-    <script src="/socket.io/socket.io.js"></script>
-    
-    <script src="chat.js"></script> 
+
+  <div class="chat-input-area">
+    <input type="text" id="chatInput" placeholder="Digite sua mensagem...">
+    <button id="sendBtn">Enviar</button>
+  </div>
+</div>
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.10/firebase-firestore-compat.js"></script>
+
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyDXkAcF9LeTfrOObAxazB-c8r6vtMSw3ps",
+    authDomain: "tinder-pets-b256b.firebaseapp.com",
+    projectId: "tinder-pets-b256b",
+    storageBucket: "tinder-pets-b256b.firebasestorage.app",
+    messagingSenderId: "254331750182",
+    appId: "1:254331750182:web:3ec7be16e293848c0163e7"
+  };
+
+  firebase.initializeApp(firebaseConfig);
+  const db = firebase.firestore();
+</script>
+
+<script src="chat.js"></script>
 </body>
 </html>
