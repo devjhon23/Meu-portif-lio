@@ -1,9 +1,9 @@
 const pets = [
-    { nome: "Sid", especie: "Cachorro", idade: 7, foto: "Imagens/sid.jpg" },
+    { nome: "Sid", especie: "Cachorro", idade: 7, foto: "imagens/amira.jpg" },
     { nome: "Cacau", especie: "Cachorro", idade: 3, foto: "imagens/cacau.jpg" }, 
-    { nome: "Nina", especie: "Gato", idade: 4, foto: "imagens/nina.jpg" }, 
-    { nome: "Mila", especie: "Cachorro", idade: 6, foto: "imagens/mila.jpg" },
-    { nome: "Amira", especie: "Gato", idade: 3, foto: "imagens/amira.jpg" } 
+    { nome: "Nina", especie: "Gato", idade: 4, foto: "imagens/mila.jpg" }, 
+    { nome: "Mila", especie: "Cachorro", idade: 6, foto: "imagens/sid.jpg" },
+    { nome: "Amira", especie: "Gato", idade: 3, foto: "imagens/max.jpg" } 
 ]; 
 // variaveis
 let indicePetAtual = 0; 
