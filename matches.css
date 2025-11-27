@@ -29,23 +29,22 @@ nav ul {
 }
 
 nav a.ativo {
-    text-decoration: underline; /* Indica melhor qual link está ativo */
+    text-decoration: underline; 
 }
 
 main {
-    /* Centraliza o conteúdo principal e adiciona espaço */
+   
     text-align: center;
     padding: 20px; 
 }
 
-/* Container que deve envolver todos os cards de match */
 .cards-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
     margin-top: 20px;
-    /* Limita a largura para centralizar o grid */
+   
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
@@ -54,26 +53,25 @@ main {
 .card {
     background-color: white;
     border-radius: 15px;
-    /* CORREÇÃO DE SINTAXE: Removido o espaço desnecessário no rgba */
+   
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     width: 220px;
     overflow: hidden;
     transition: transform 0.2s;
-    text-align: left; /* Alinha o texto das informações do pet à esquerda */
+    text-align: left;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-/* Estilo para a imagem dentro do card */
 .card img {
     width: 100%;
-    height: 180px; /* Altura fixa para uniformidade */
+    height: 180px; 
     object-fit: cover;
 }
 
-/* Estilo para as informações de texto */
+
 .card-info {
     padding: 10px 15px;
 }
@@ -95,6 +93,6 @@ footer {
     background-color: #ff7f50;
     color: white;
     padding: 15px;
-    /* Rodapé é fixo na parte inferior do conteúdo, não na viewport */
+   
     margin-top: 40px;
 }

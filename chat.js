@@ -3,7 +3,7 @@ const chatInput = document.getElementById("chatInput");
 const sendBtn = document.getElementById("sendBtn");
 
 
-// Enviar mensagem para o Firebase
+
 sendBtn.addEventListener("click", () => {
   const texto = chatInput.value.trim();
 
@@ -14,15 +14,15 @@ sendBtn.addEventListener("click", () => {
     horario: new Date()
   });
 
-  chatInput.value = ""; // limpa o input
+  chatInput.value = ""; 
 });
 
 
-// Carregar mensagens em tempo real
+
 db.collection("mensagens")
   .orderBy("horario")
   .onSnapshot((snapshot) => {
-    chatBox.innerHTML = ""; // limpa antes de exibir de novo
+    chatBox.innerHTML = ""; 
 
     snapshot.forEach(doc => {
       const msg = doc.data();
@@ -33,6 +33,6 @@ db.collection("mensagens")
       chatBox.appendChild(p);
     });
 
-    // scroll automático
+ 
     chatBox.scrollTop = chatBox.scrollHeight;
   });
